@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'me.nooneboss'
-version = '1.0-SNAPSHOT'
+version = '1.0'
 
 repositories {
     mavenCentral()
@@ -15,6 +15,10 @@ repositories {
 dependencies{
     implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1'
     implementation 'io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT'
+}
+
+allprojects {
+    buildDir = "$projectDir/.m2/repository/me/nooneboss/RestartTranslator/${version}"
 }
 
 compileKotlin {
