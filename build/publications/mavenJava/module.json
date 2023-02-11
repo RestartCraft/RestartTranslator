@@ -1,0 +1,92 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.gradle.sample",
+    "module": "library",
+    "version": "1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library-1.1.jar",
+          "url": "library-1.1.jar",
+          "size": 100066,
+          "sha512": "92d800cb2a377faa443906271ba333f91fdca36910af3164e7024f8f67c052a3521abacd69b3a3d8014da7c570daf5dd85ce73efd2adee4332da6f48131de7ac",
+          "sha256": "43f7567d8f7b50b68fbc9a469a48d038b63b221058a7c8da4daae28fc8230717",
+          "sha1": "5a6c1f3d5b3ecb95d0eab68b687a071a32883363",
+          "md5": "41e3ee351772577be58a3fe19b09f0f6"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "io.papermc.paper",
+          "module": "paper-api",
+          "version": {
+            "requires": "1.19.3-R0.1-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library-1.1.jar",
+          "url": "library-1.1.jar",
+          "size": 100066,
+          "sha512": "92d800cb2a377faa443906271ba333f91fdca36910af3164e7024f8f67c052a3521abacd69b3a3d8014da7c570daf5dd85ce73efd2adee4332da6f48131de7ac",
+          "sha256": "43f7567d8f7b50b68fbc9a469a48d038b63b221058a7c8da4daae28fc8230717",
+          "sha1": "5a6c1f3d5b3ecb95d0eab68b687a071a32883363",
+          "md5": "41e3ee351772577be58a3fe19b09f0f6"
+        }
+      ]
+    }
+  ]
+}
