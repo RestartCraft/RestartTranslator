@@ -1,0 +1,31 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.7.21'
+    id 'application'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.8.10'
+}
+
+group = 'me.nooneboss'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.papermc.io/repository/maven-public/" }
+}
+
+dependencies{
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1'
+    implementation 'io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT'
+}
+
+
+compileKotlin {
+    kotlinOptions.jvmTarget = '16'
+}
+
+compileTestKotlin {
+    kotlinOptions.jvmTarget = '16'
+}
+
+application {
+    mainClassName = 'MainKt'
+}
