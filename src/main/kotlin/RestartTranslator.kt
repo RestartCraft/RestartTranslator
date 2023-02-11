@@ -17,5 +17,4 @@ object RestartTranslator{
 
     @JvmName("getRu1")
     fun getRu(material: Material): String = material.getRu()
-
 }
