@@ -17,10 +17,6 @@ dependencies{
     implementation 'io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT'
 }
 
-allprojects {
-    buildDir = "$projectDir/.m2/repository/me/nooneboss/RestartTranslator/${version}"
-}
-
 compileKotlin {
     kotlinOptions.jvmTarget = '16'
 }
