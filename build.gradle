@@ -26,3 +26,12 @@ compileTestKotlin {
 }
 
 build.dependsOn publishToMavenLocal
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+            artifactId 'RestartTranslator'
+        }
+    }
+}
